@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="jquery.js"></script>
+<script language="javascript">
+ $(function(){
+        var ei = $("#large");
+        ei.hide();
+        $("#img1").mousemove(function(e){
+                ei.css({top:e.pageY,left:e.pageX}).html('<img style="border:1px solid gray;" src="' + this.src + '" />').show();
+        }).mouseout( function(){
+                ei.hide("slow");
+        })
+        $("#f1").change(function(){
+                $("#img1").attr("src","file:///"+$("#f1").val());
+				alert($("#f1").val());
+        })
+ });
+</script>
+<style type="text/css">
+        #large{position:absolute;display:none;z-index:999;}
+</style>
+</head>
+<body>
+<form name="form1" id="form1">
+<div id="demo">
+<input id="f1" name="f1" type="file" />
+<img id="img1" width="60" height="60">
+</div>
+<div id="large"></div>
+</form>
+</body>
+</html>
