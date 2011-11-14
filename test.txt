@@ -2,3 +2,4 @@ hello git!
 hello again with conflict.
 Add something.
 some both.
+Nice Nice.
