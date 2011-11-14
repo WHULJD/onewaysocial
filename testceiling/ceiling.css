@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+#wrapper{
+	width:960px;
+	margin:auto;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+	height:30px;
+}
+ul li {
+    float: left;
+    display: inline;
+    font: 0.9em Arial, Helvetica, sans-serif;
+    height: 30px;
+    width: 100px;
+    list-style: none;
+}
+ul li a {
+    color: #FFF;
+    text-decoration: none;
+    line-height: 29px;
+    width: 91px;
+    margin: 0px;
+    padding: 0px 0px 0px 8px;
+    display: block;
+    border-right: solid 1px #ccc;
+    border-bottom:solid 1px #ccc;
+    background: #808080;
+}
+
+ul li ul li { height:25px; }
+ul li ul li a {
+    background: #666;
+    line-height:24px;
+}
+ul li a:hover { background: #666; }
+ul li ul { visibility: hidden; }
+ul li:hover ul { visibility: visible; }
+ul li ul li a:hover { background: #333; }
